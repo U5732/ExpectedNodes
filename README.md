@@ -2,7 +2,7 @@ Evaluate link parition
 =========================
 This program evaluate a link partition of a graph according to different quality functions.
 This program process only undirected unweighted edges.
-The quality function that can be computed are:
+The quality functions that can be computed are:
 
 * Partition density.
 "Link communities reveal multiscale complexity in networks"
@@ -74,18 +74,15 @@ Of course, you can use only one quality function:
 #### INPUTFILE
 
 The input file should contain a list of undirected unweighted links with a community.
-A links with a community should be in the format: Source, Target, Community
+A links with a community should be in the format: Source, Target, Community.
 For a triangle with 2 communities:
 ```
 1 2 1
 1 3 1
 2 3 2
-...
 
 ```
 The entry could be space or tab separated.
-
-
 You can generate toy example entry file. See Examples generation.
 
 ### Arguments
@@ -95,14 +92,13 @@ The quality functions has to be provided as a comma separated list of their id n
 Available quality function are:
 
 
-* Parition Density introduced by Ahn et al. ID=, name=ParitionDensity
-* The first version of the quality function introduce by Evans et al. . id= , name=E1
-* The second version of the quality function introduce by Evans et al. . id= , name=E2
-* The third version of the quality function introduce by Evans et al. . id= , name=E3
-* Expected Nodes Id= , name= LinkExpectation
+* Parition Density introduced by Ahn et al. ID=2, name=ParitionDensity
+* The first version of the quality function introduce by Evans et al. . id=3 , name=E1
+* The second version of the quality function introduce by Evans et al. . id=4 , name=E2
+* The third version of the quality function introduce by Evans et al. . id=5 , name=E3
+* Expected Nodes Id=1 , name= ExpectedNodes
 
 Please refer to the according paper to find their definition.
-
 
 Examples generation
 ----------------------
